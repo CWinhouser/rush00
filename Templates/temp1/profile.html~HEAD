@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TITLE>AK ltd.</TITLE>
+        <style>
+    .rcorners {
+        text-align: center;
+        border-radius: 25px;
+        margin: auto;
+        background: #73AD21;
+        margin-top: 10px;
+        padding: 20px; 
+        width: 700px;
+        height: 700px; 
+    }    
+    
+        </style>
+    </head>
+    <body>
+        <div class="rcorners">
+            <h1>Register</h1>
+            <form name="adduser" action="" method="post">
+                Username: <input username="username" type="text" placeholder="enter username">
+                <br>
+                <br>
+                Password: <input password="password" type="text" placeholder="enter password">
+                <br>
+                <br>
+                <input type="submit" value="Login" name="submit">
+            </form>
+        </div>
+    </body>
+</html>
