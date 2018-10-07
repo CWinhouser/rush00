@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","Eresx238","eshop");
+$con = mysqli_connect("localhost","root","Dem0lition","eshop");
 
 // Check connection
 if (mysqli_connect_errno())

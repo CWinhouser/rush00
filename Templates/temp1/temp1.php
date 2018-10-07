@@ -6,7 +6,7 @@
 $con = mysqli_connect('localhost', 'root', '');
 mysqli_select_db($con, 'products');
 
-$results_per_page = 2;
+$results_per_page = 10;
 
 $sql = "SELECT * FROM products WHERE gender = 'M'";
 $result = mysqli_query($con, $sql);

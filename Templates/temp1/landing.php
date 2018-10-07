@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <TITLE>AK ltd.</TITLE>
 <style>
 .topbar {
     position: absolute;
     height: 80px;
     top: 0;
     width: 1900px;
-    background-color: rgba(76, 86, 175, 0.61);
-}
+    background-color: rgba(161, 52, 52, 0.61);
+}    
 
 .register{
     position: absolute;
     margin-left: 1732px;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 150px;
-    height: 50px;
+    height: 30px;
     font-weight: bold;
     font-style: oblique;
+    color: white;
     text-align: center;
-    background-color: #8AC007;
-}
+} 
 
 .login {
     position: absolute;
@@ -32,7 +33,7 @@
     position: absolute;
     height: 80px;
     width: 80px;
-    background-color: #000;
+    background-image: url("logo.png");
 }
 
 .cart {
@@ -74,15 +75,13 @@ li a:hover:not(.active) {
     margin-left: 0px;
     width: 300px;
     height: 300px;
-    border: 3px solid green;
 }
 
 .box1{
     position: absolute;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
+
 }
 .box2{
     position: absolute;
@@ -90,8 +89,6 @@ li a:hover:not(.active) {
     margin-top: 0px;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
 }
 .box3{
     position: absolute;
@@ -99,16 +96,12 @@ li a:hover:not(.active) {
     margin-top: 0px;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
 }
 .box4{
     position: absolute;
     margin-top: 400px;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
 }
 .box5{
     position: absolute;
@@ -116,8 +109,6 @@ li a:hover:not(.active) {
     margin-left: 400px;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
 }
 .box6{
     position: absolute;
@@ -125,8 +116,6 @@ li a:hover:not(.active) {
     margin-left: 800px;
     width: 400px;
     height: 400px;
-    display: block;
-    border: 1px solid green;
 }
 
 .parent {
@@ -136,7 +125,6 @@ li a:hover:not(.active) {
     margin-left: 400px;
     width: 1200px;
     height: 800px;
-    border: 3px solid #8AC007;
 }
 
 </style>
@@ -144,19 +132,19 @@ li a:hover:not(.active) {
 <body>
 <div class="topbar">
     <div class="register">
-           <a class="center">Register Today!</a>
+           <a class="center" href="register.php">Register Today!</a>
     </div>
    <div class="logo"></div>
    <div class="cart"></div>
-   <form class="login" action="/temp1.php">
-       Username: <input type="text" username="username" value=""> 
-       Password: <input class="pw" type="text" password="password" value="">
-       <input type="submit" value="login">
-   </form>
+   <form class="login" action="../login.php" method="POST">
+        Username: <input type="text" name="login">
+        Password: <input class="pw" type="password" name="pass">
+        <input type="submit" value="login">
+    </form>
 </div>
 <div class="categories">
     <ul>
-    <li><a class="active">Mens</a></li>
+    <li><a>Mens</a></li>
     <li><a>Women</a></li>
     <li><a>Shoes</a></li>
     <li><a>Pants</a></li>
@@ -165,12 +153,12 @@ li a:hover:not(.active) {
     </ul>
 </div>
 <div class="parent">
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
+    <div class="box1"><img src="https://ae01.alicdn.com/kf/HTB1z.npPpXXXXcXXVXXq6xXFXXXa/Special-price-new-men-coat-New-Zealand-calfskin-leather-male-models-Motorcycle-casual-leather-jacket-free.jpg_640x640.jpg" alt="Male Model" width="400" height="400"></div>
+    <div class="box2"><img src="http://4.bp.blogspot.com/-A32qvFQx0r4/U3fC7yIe1NI/AAAAAAAACzY/Oe977xFSv3Q/s1600/women+clothing+models+%25282%2529.jpg" alt="Feale Model" width="400" height="400"></div>
+    <div class="box3"><img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/a5f63f2948eb4ead81d1a5790009511a_9366/Pro_Model_Shoes_Black_S85957_01_standard.jpg" alt="Feale Model" width="400" height="400"></div>
+    <div class="box4"><img src="https://media.frenchconnection.com/ms/fcuk/54fcf/1537/1024/colourful-track-pants.jpg?404=fcuk/54fcf.jpg" alt="Feale Model" width="400" height="400"></div>
     <div class="box5"></div>
-    <div class="box6"></div>
+    <div class="box6"><img src="https://mms-images.out.customink.com/mms/images/catalog/styles/286800/catalog_detail_image_large.jpg" alt="Feale Model" width="400" height="400"></div>
 </div>
 </body>
 </body>

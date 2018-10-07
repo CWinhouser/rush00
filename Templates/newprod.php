@@ -5,7 +5,7 @@
 
 
 
-require_once ("./connect/connect.php");
+require_once ("connect.php");
 ///change to product details
 $username = $_POST['username'];
 $password = $_POST['password'];
